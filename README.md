@@ -1,6 +1,7 @@
 # careerprep-website-demo
 
-## Client Prototype: React-based Prototype for Data Science Career Prep Site (Commissioned Project)
+## Client Demo:  React-based Prototype for Data Science Career Prep Site 
+
 This repository contains a **React-based prototype** for the Data Science Career Prep Site, created as a commissioned project to provide an interactive platform for aspiring data scientists. This application was developed as a demo from a **Figma mockup** and deployed on **Vercel** to showcase core features.
 
 The website offers a combination of **free educational content** (lessons and blog posts) and **paid professional services** (resume reviews, 1-on-1 coaching, mock interviews, bootcamps) to help users advance their careers with a focus on data science preparation.
@@ -30,5 +31,5 @@ The website offers a combination of **free educational content** (lessons and bl
 ![Lessons Page](./assets/images/lessonspage.png)
 ![Blog Page](./assets/images/blogpage.png)
 ![Services Page](./assets/images/servicespage.png)
-![Testimonials Page](./assets/images/tesimonialspage.png)
+![Testimonials Page](./assets/images/testimonialspage.png)
 ![FAQ Page](./assets/images/FAQpage.png)
