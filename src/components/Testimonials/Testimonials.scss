@@ -1,0 +1,35 @@
+.testimonial__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: rgba(99, 91, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  
+  .testimonial__info {
+    margin-left: 1rem;
+  }
+  
+  .testimonial__name {
+    font-weight: 700;
+  }
+  
+  .testimonial__position {
+    color: var(--color-muted-foreground);
+    font-size: 0.875rem;
+  }
+  
+  .testimonial__quote {
+    font-style: italic;
+  }
+  

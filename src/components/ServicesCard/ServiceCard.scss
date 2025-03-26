@@ -1,0 +1,33 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .service-card__icon {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+  
+  .service-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card__price {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card__description {
+    color: var(--color-muted-foreground);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .service-card__button {
+    text-align: center;
+  }
+  

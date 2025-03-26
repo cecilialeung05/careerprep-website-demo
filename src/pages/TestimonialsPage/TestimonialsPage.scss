@@ -1,0 +1,61 @@
+.testimonials-page__header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  
+  .testimonials-page__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials-page__description {
+    font-size: 1.25rem;
+    color: var(--color-muted-foreground);
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .testimonials-page__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .testimonial__rating {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial__star {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .testimonial__star--filled {
+    color: var(--color-primary);
+  }
+  
+  .testimonial__star--empty {
+    color: var(--color-muted);
+  }
+  
+  .testimonial__service {
+    font-size: 0.875rem;
+    color: var(--color-muted-foreground);
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .testimonials-page__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .testimonials-page__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

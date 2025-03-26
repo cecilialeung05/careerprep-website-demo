@@ -1,0 +1,353 @@
+
+.lessons__header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.lessons__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.lessons__description {
+  font-size: 1.25rem;
+  color: var(--color-muted-foreground);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.lessons__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.lessons__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lessons__search {
+  position: relative;
+}
+
+.lessons__search-input {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.lessons__search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 91, 255, 0.5);
+}
+
+.lessons__search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted-foreground);
+}
+
+.lessons__filters {
+  margin-bottom: 1.5rem;
+}
+
+.lessons__filters-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.lessons__filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lessons__filter-tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lessons__filter-tag--active {
+  background-color: rgba(99, 91, 255, 0.1);
+  color: var(--color-primary);
+}
+
+.lessons__filter-tag--clear {
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+}
+
+.lessons__filter-tag-close {
+  margin-left: 0.25rem;
+}
+
+.lessons__categories-title,
+.lessons__levels-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.lessons__categories-list,
+.lessons__levels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lessons__categories-link,
+.lessons__levels-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-black);
+  transition: color 0.2s ease;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lessons__categories-link:hover,
+.lessons__levels-link:hover,
+.lessons__categories-link--active,
+.lessons__levels-link--active {
+  color: var(--color-primary);
+}
+
+.lessons__categories-dot,
+.lessons__levels-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.lessons__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.lesson-card__image-container {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.lesson-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lesson-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-card__meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.lesson-card__category {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  background-color: rgba(99, 91, 255, 0.1);
+  color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+}
+
+.lesson-card__level {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+  margin-left: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.lesson-card__duration {
+  font-size: 0.75rem;
+  color: var(--color-muted-foreground);
+  margin-left: auto;
+}
+
+.lesson-card__content {
+  color: var(--color-muted-foreground);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.lesson-card__button {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+}
+
+.lessons__empty {
+  text-align: center;
+  padding: 3rem 0;
+  grid-column: 1 / -1;
+}
+
+.lessons__empty-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.lessons__empty-text {
+  color: var(--color-muted-foreground);
+  margin-bottom: 1rem;
+}
+
+.lessons__empty-button {
+  margin-top: 1rem;
+}
+
+.lessons__loading-title {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  margin: 0 auto 1rem;
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-description {
+  height: 1.5rem;
+  width: 24rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  margin: 0 auto;
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-search {
+  height: 2.5rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-card-title {
+  height: 1.5rem;
+  width: 8rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  margin-bottom: 1rem;
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lessons__loading-item {
+  height: 1.25rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-lesson {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lessons__loading-lesson-image {
+  height: 12rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius);
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-lesson-title {
+  height: 1.5rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-lesson-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lessons__loading-lesson-category,
+.lessons__loading-lesson-level {
+  height: 1.25rem;
+  width: 4rem;
+  background-color: var(--color-muted);
+  border-radius: 9999px;
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-lesson-duration {
+  height: 1.25rem;
+  width: 2.5rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  margin-left: auto;
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-lesson-content {
+  height: 4rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  animation: pulse 1.5s infinite;
+}
+
+.lessons__loading-lesson-button {
+  height: 2.5rem;
+  background-color: var(--color-muted);
+  border-radius: var(--border-radius-md);
+  animation: pulse 1.5s infinite;
+}
+
+@media (min-width: 768px) {
+  .lessons__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lessons__content {
+    grid-template-columns: 1fr 3fr;
+  }
+}

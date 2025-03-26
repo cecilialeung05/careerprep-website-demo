@@ -1,0 +1,16 @@
+/* _mixins.scss */
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin gradient-bg {
+    background: linear-gradient(
+      135deg,
+      $color-primary 0%,
+      $color-primary-light 50%,
+      $color-primary-lighter 100%
+    );
+  }
+  

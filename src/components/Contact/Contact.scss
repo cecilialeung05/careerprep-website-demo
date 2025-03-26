@@ -1,0 +1,31 @@
+.contact {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact__email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact__email-icon {
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+  }
+  
+  .contact__email-link {
+    font-size: 1.125rem;
+  }
+  
+  .contact__email-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .contact__text {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  

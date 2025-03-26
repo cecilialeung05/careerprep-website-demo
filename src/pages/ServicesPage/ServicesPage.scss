@@ -1,0 +1,133 @@
+.services__header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  
+  .services__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .services__description {
+    font-size: 1.25rem;
+    color: var(--color-muted-foreground);
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .service-card__icon {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+  
+  .service-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card__price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card__price {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .service-card__badge {
+    font-size: 0.75rem;
+    background-color: rgba(99, 91, 255, 0.1);
+    color: var(--color-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    margin-left: 1rem;
+  }
+  
+  .service-card__description {
+    color: var(--color-muted-foreground);
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-card__features-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card__features-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+    color: var(--color-muted-foreground);
+  }
+  
+  .service-card__feature {
+    margin-bottom: 0.25rem;
+  }
+  
+  .service-card__button {
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .services__cta {
+    text-align: center;
+  }
+  
+  .services__cta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .services__cta-description {
+    font-size: 1.125rem;
+    color: var(--color-muted-foreground);
+    margin-bottom: 2rem;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .services__cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  @media (min-width: 640px) {
+    .services__cta-buttons {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .services__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
